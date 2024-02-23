@@ -22,6 +22,10 @@ await mongoose.connect("mongodb+srv://user:user@posclient.lq5unfm.mongodb.net/?r
 
 const app = express();
 
+app.get("/",(req,res)=>{
+    res.send("hello world")
+})
+
 //middlewares
 app.use(cors());
 app.use(express.json());
